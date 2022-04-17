@@ -1,6 +1,7 @@
 package com.shunthespy.portermod.item;
 
 import com.shunthespy.portermod.PorterMod;
+import com.shunthespy.portermod.item.custom.PowerBoneItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, PorterMod.MOD_ID);
 
     public static final RegistryObject<Item> POWERBONE = ITEMS.register("powerbone",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PORTER_TAB)));
+            () -> new PowerBoneItem(new Item.Properties().tab(ModCreativeModeTab.PORTER_TAB)));
 
 
 
