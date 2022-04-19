@@ -1,6 +1,7 @@
 package com.shunthespy.portermod.item;
 
 import com.shunthespy.portermod.PorterMod;
+import com.shunthespy.portermod.item.custom.JitterSwordItem;
 import com.shunthespy.portermod.item.custom.PowerBoneItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +15,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> POWERBONE = ITEMS.register("powerbone",
             () -> new PowerBoneItem(new Item.Properties().tab(ModCreativeModeTab.PORTER_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> JITTERSWORD = ITEMS.register("jittersword",
+            () -> new JitterSwordItem(new Item.Properties().tab(ModCreativeModeTab.PORTER_TAB).stacksTo(1)));
 
 
 
