@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, PorterMod.MOD_ID);
 
     public static final RegistryObject<Item> POWERBONE = ITEMS.register("powerbone",
-            () -> new PowerBoneItem(new Item.Properties().tab(ModCreativeModeTab.PORTER_TAB)));
+            () -> new PowerBoneItem(new Item.Properties().tab(ModCreativeModeTab.PORTER_TAB).stacksTo(1)));
 
 
 
